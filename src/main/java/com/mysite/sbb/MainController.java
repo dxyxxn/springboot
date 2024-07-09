@@ -13,4 +13,8 @@ public class MainController {
         return "Welcome to sbb!";
     }
     
+	@GetMapping("/")
+	public String root() {
+		return "redirect:/question/list";
+	}
 }
